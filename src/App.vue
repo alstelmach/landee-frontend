@@ -1,14 +1,12 @@
 <template>
   <v-app>
-    <v-main>
-      <v-btn> Olek </v-btn>
-    </v-main>
+    <v-btn color="primary" rounded>Hello world!</v-btn>
   </v-app>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "landee-app",
   components: {},
 };
 </script>

@@ -1,7 +1,10 @@
 import { createApp } from "vue";
+import { registerPlugins } from "@/plugins";
 import App from "./App.vue";
-import vuetify from "./plugins/vuetify";
+
+const app = createApp(App);
+
+registerPlugins(app);
 
 const rootContainer = "#app";
-
-createApp(App).use(vuetify).mount(rootContainer);
+app.mount(rootContainer);
